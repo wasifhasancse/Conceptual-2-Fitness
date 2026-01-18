@@ -61,7 +61,7 @@ a {
   max-width: 700px;
 }
 
-.extra-mile-content p{
+.extra-mile-content p {
   color: rgba(255, 255, 255, 0.6);
   font-size: 1.2rem;
   margin: 10px 0 30px;
@@ -193,7 +193,7 @@ header {
 /* Change Your Habits section end */
 
 /* Extra Mile section start */
-.extra-mile{
+.extra-mile {
   display: flex;
   gap: 30px;
   align-items: center;
@@ -203,9 +203,85 @@ header {
   border-radius: 18px;
 }
 
-.extra-mile-image img{
-width: 100%;
+.extra-mile-image img {
+  width: 100%;
   vertical-align: middle;
   border-radius: 8px;
 }
 /* Extra Mile section end */
+
+/* Trainings and Exercises section start */
+.training-exercise-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 200px);
+}
+
+.training-exercise-grid div:nth-child(2),
+.training-exercise-grid div:nth-child(4) {
+  grid-column: span 2;
+}
+
+.training-exercise-grid img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  /* mix-blend-mode: multiply; */
+}
+
+.training-exercise-grid-1,
+.training-exercise-grid-2,
+.training-exercise-grid-3,
+.training-exercise-grid-4,
+.training-exercise-grid-5,
+.training-exercise-grid-6 {
+  position: relative;
+}
+
+.training-exercise-grid-1::after,
+.training-exercise-grid-2::after,
+.training-exercise-grid-3::after,
+.training-exercise-grid-4::after,
+.training-exercise-grid-5::after,
+.training-exercise-grid-6::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.training-exercise-grid-1::after {
+  background: rgba(6, 255, 210, 0.3);
+}
+
+.training-exercise-grid-2::after {
+  background: rgba(255, 0, 0, 0.26);
+}
+
+.training-exercise-grid-3::after {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.training-exercise-grid-4::after {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.training-exercise-grid-5::after {
+  background: rgba(66, 255, 0, 0.2);
+}
+
+.training-exercise-grid-6::after {
+  background: rgba(0, 71, 255, 0.3);
+}
+
+.training-exercise-grid p {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 0px 10px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 500;
+  font-size: 1rem;
+  z-index: 1;
+}
+
+/* Trainings and Exercises section end */
