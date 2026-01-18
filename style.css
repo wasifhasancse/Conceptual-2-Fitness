@@ -29,15 +29,30 @@ a {
   transition: all 0.3s;
 }
 
+.primary-btn:hover {
+  color: rgba(230, 83, 60, 1);
+  background: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(230, 83, 60, 1);
+  box-shadow: 0 0 10px rgba(230, 83, 60, 1);
+  transform: scale(0.99);
+}
+
 .secondary-btn {
   padding: 15px 45px;
   font-size: 1.2rem;
   font-weight: 500;
-  /* color: rgba(230, 83, 60, 1); */
   color: rgba(255, 255, 255, 1);
   border: 2px solid rgba(255, 255, 255, 1);
   border-radius: 100px;
   transition: all 0.3s;
+}
+
+.secondary-btn:hover {
+  color: rgba(230, 83, 60, 1);
+  background: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(230, 83, 60, 1);
+  box-shadow: 0 0 10px rgba(230, 83, 60, 1);
+  transform: scale(0.99);
 }
 
 .section-header {
@@ -96,13 +111,17 @@ header {
   font-weight: 800;
 }
 
+.logo h1:hover {
+  text-shadow: 0 0 2px rgba(230, 83, 60, 1);
+}
+
 .nav-link ul {
   list-style: none;
   display: flex;
   align-items: center;
   gap: 40px;
   border-radius: 100px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .nav-link ul li a {
@@ -111,10 +130,14 @@ header {
   font-size: 1.2rem;
   font-weight: 500;
   color: rgba(255, 255, 255, 1);
+  border: 1px solid transparent;
+  transition: all 0.3s;
 }
 
 .nav-link ul li a:hover {
   background: rgba(230, 83, 60, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
+  box-shadow: 0 0 10px rgba(230, 83, 60, 1);
 }
 /* nav section end  */
 
@@ -164,6 +187,7 @@ header {
   justify-content: center;
   text-align: center;
   gap: 30px;
+  margin: 50px auto 0;
 }
 
 .change-habits-card {
@@ -172,13 +196,24 @@ header {
   align-items: center;
   gap: 20px;
   padding: 20px;
-  margin: 50px auto 0;
 }
 
 .change-habits-card img {
   width: 100%;
   vertical-align: middle;
   border-radius: 50%;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+}
+
+.change-habits-card img:hover,
+.extra-mile-image img:hover,
+.our-team-card img:hover {
+  outline: 3px solid rgba(255, 255, 255, 1);
+  outline-offset: -3px;
+  transform: scale(0.95);
+  opacity: 0.8;
+  box-shadow: 0 0 20px rgba(230, 83, 60, 1);
 }
 
 .change-habits-card h3 {
@@ -208,6 +243,7 @@ header {
   width: 100%;
   vertical-align: middle;
   border-radius: 8px;
+  transition: all 0.3s;
 }
 /* Extra Mile section end */
 
@@ -227,6 +263,7 @@ header {
   width: 100%;
   height: 100%;
   vertical-align: middle;
+  transition: all 0.3s;
   /* mix-blend-mode: multiply; */
 }
 
@@ -306,6 +343,7 @@ header {
   width: 100%;
   height: 100%;
   border-radius: 8px;
+  transition: all 0.3s;
 }
 
 .our-team-card-info {
@@ -315,6 +353,7 @@ header {
   padding: 10px 50px 10px 10px;
   border-radius: 10px;
   background: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
 }
 
 .our-team-card-info h3 {
@@ -326,6 +365,13 @@ header {
   font-size: 1rem;
   padding-top: 6px;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.our-team-card:hover .our-team-card-info {
+  outline: 1px solid rgba(255, 255, 255, 1);
+  outline-offset: -1px;
+  box-shadow: 0px 0px 3px rgba(255, 255, 255, 1);
+  transform: scale(0.85);
 }
 /* meet our team section end */
 
@@ -343,6 +389,15 @@ footer {
   gap: 50px;
 }
 
+.footer-top .logo {
+  max-width: 450px;
+}
+
+.footer-top-link {
+  display: flex;
+  gap: 80px;
+}
+
 .footer-top .logo p {
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.8);
@@ -354,16 +409,30 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 0px 20px;
+  width: 300px;
+}
+
+.footer-get-start a {
+  transition: all 0.3s;
+}
+
+.footer-get-start a:hover {
+  transform: scale(1.02);
+  letter-spacing: 2px;
+  color: rgba(230, 83, 60, 1);
+  /* box-shadow: inset 0 -0.5px 0 0 #ffeb3b; */
 }
 
 .footer-get-start h3 {
   font-size: 1.3rem;
+  padding-bottom: 10px;
   color: rgba(255, 255, 255, 1);
 }
 
 hr {
   background: rgba(255, 255, 255, 1);
-  margin: 50px auto;
+  margin: 30px auto;
   height: 1px;
   opacity: 0.4;
 }
@@ -374,3 +443,132 @@ hr {
   color: rgba(255, 255, 255, 0.6);
 }
 /* footer section end */
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0px 20px;
+  }
+
+  .nav,
+  .footer-top,
+  .hero-btn-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+.nav .logo{
+  padding-top: 30px;
+}
+
+  .nav-link ul {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-link ul li a {
+    padding: 5px 10px;
+  }
+
+  .hero,
+  .extra-mile {
+    flex-direction: column-reverse;
+  }
+
+  .hero-image img{
+    width: 100%;
+  }
+
+  .change-habits-card-container {
+    flex-wrap: wrap;
+  }
+
+  .extra-mile {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .training-exercise-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 250px);
+  }
+
+  .training-exercise-grid div:nth-child(2),
+  .training-exercise-grid div:nth-child(4) {
+    grid-column: span 1;
+  }
+
+  .our-team-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 250px);
+    border-radius: 8px;
+    gap: 20px;
+  }
+
+  .footer-top {
+    text-align: center;
+  }
+
+  .footer-top-link {
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-get-start {
+    color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px 20px;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+
+  .container {
+    padding: 0px 20px;
+  }
+
+  .nav,
+  .footer-top{
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .training-exercise-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .training-exercise-grid div:nth-child(2),
+  .training-exercise-grid div:nth-child(4) {
+    grid-column: span 1;
+  }
+
+  .our-team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 8px;
+    gap: 20px;
+  }
+
+
+  .footer-top {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .footer-top-link {
+    gap: 50px;
+  }
+
+  .footer-get-start {
+    color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px 20px;
+    width: auto;
+  }
+
+}
