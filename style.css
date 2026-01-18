@@ -283,5 +283,46 @@ header {
   font-size: 1rem;
   z-index: 1;
 }
-
 /* Trainings and Exercises section end */
+
+/* meet our team section start  */
+.our-team-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 350px);
+  gap: 30px;
+  padding: 20px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.our-team-card{
+  position: relative;
+}
+
+.our-team-card img{
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.our-team-card-info{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px 50px 10px 10px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.our-team-card-info h3{
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 1);
+}
+
+.our-team-card-info p{
+  font-size: 1rem;
+  padding-top: 6px;
+  color: rgba(255, 255, 255, 0.8);
+}
+/* meet our team section end */
