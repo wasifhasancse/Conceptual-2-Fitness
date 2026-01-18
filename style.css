@@ -47,17 +47,27 @@ a {
   align-items: center;
   text-align: center;
 }
-.section-header h2 {
+
+.section-header h2,
+.extra-mile-content h2 {
   color: rgba(255, 255, 255, 1);
   font-size: 3rem;
 }
+
 .section-header p {
   color: rgba(255, 255, 255, 0.6);
   font-size: 1.2rem;
   margin: 10px 0 30px;
   max-width: 700px;
 }
+
+.extra-mile-content p{
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.2rem;
+  margin: 10px 0 30px;
+}
 /* common class end */
+
 body {
   background: rgba(0, 0, 0, 0.9);
 }
@@ -161,7 +171,7 @@ header {
   align-items: center;
   gap: 20px;
   padding: 20px;
-  margin: 50px 0 0;
+  margin: 50px auto 0;
 }
 
 .change-habits-card img {
@@ -181,3 +191,21 @@ header {
   padding-top: 10px;
 }
 /* Change Your Habits section end */
+
+/* Extra Mile section start */
+.extra-mile{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding: 30px;
+  margin: 100px auto 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+}
+
+.extra-mile-image img{
+width: 100%;
+  vertical-align: middle;
+  border-radius: 8px;
+}
+/* Extra Mile section end */
